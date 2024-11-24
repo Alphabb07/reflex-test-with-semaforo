@@ -9,36 +9,36 @@ function setup(){
 
 
 
-}
+} //ZONA IN MANUTENZIONE
 
-function draw(){
-  background(110);
-  fill(50);
-  rect(25, 50);
+//function draw(){
+  //background(110);
+  //fill(50);
+  //rect(25, 50);
   
-  if(countdown === 3){
-    fill(255, 0, 0);
-    circle(75, 100, 80); 
+  //if(countdown === 3){
+    //fill(255, 0, 0);
+    //circle(75, 100, 80); 
 
-  } else if(countdown === 2){
-    fill(255, 0, 0);
-    circle(75, 200, 80); 
-  } else if(countdown === 1){
+  //} else if(countdown === 2){
+    //fill(255, 0, 0);
+    //circle(75, 200, 80); 
+  //} else if(countdown === 1){
 
 
-    fill(0, 255, 0);
-    circle(75, 300, 80); 
-  } else if(countdown === 0){
+    //fill(0, 255, 0);
+    //circle(75, 300, 80); 
+  //} else if(countdown === 0){
    
-    fill(150, 0, 0);
-    circle(75, 100, 80); 
-    circle(75, 200, 80);
-    circle(75, 300, 80);
-  }
+    //fill(150, 0, 0);
+    //circle(75, 100, 80); 
+    //circle(75, 200, 80);
+    //circle(75, 300, 80);
+  //}
 
 
 
-}
+//}
 
 
 
