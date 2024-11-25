@@ -1,82 +1,44 @@
-console.log("Javascript caricato");
-console.log("test");
 
-function setup(){
-  createCanvas(150, 400);
-  document.querySelector('#semaforo').innerHTML = '';
- 
+let cerchio
+let cerchio2
+let cerchio3
+let punteggio
+let data1
+let data2
+let ms1
+let ms2
 
+function startGame() {
+    cerchio1 = document.querySelector(".cerchio1")
+    cerchio2 = document.querySelector(".cerchio2")
+    cerchio3 = document.querySelector(".cerchio3")
 
+    cerchio1.classList.remove("red")
+    cerchio1.classList.add("green")
 
-
-} //ZONA IN MANUTENZIONE
-
-//function draw(){
-  //background(110);
-  //fill(50);
-  //rect(25, 50);
-  
-  //if(countdown === 3){
-    //fill(255, 0, 0);
-    //circle(75, 100, 80); 
-
-  //} else if(countdown === 2){
-    //fill(255, 0, 0);
-    //circle(75, 200, 80); 
-  //} else if(countdown === 1){
-
-
-    //fill(0, 255, 0);
-    //circle(75, 300, 80); 
-  //} else if(countdown === 0){
-   
-    //fill(150, 0, 0);
-    //circle(75, 100, 80); 
-    //circle(75, 200, 80);
-    //circle(75, 300, 80);
-  //}
-
-
-
-//}
-
-
-
-
-
-
-
-
-
-let countdown = 3;
-let timer = document.querySelector("#timer");
-let GAS = document.querySelector("#GAS");
-let inizio;
-let fine;
-let risultato;
-let reflex;
-
-function conteggio(){
-  if(countdown > 0){
-    timer.textContent = countdown;
-    countdown--;
-    setTimeout(conteggio, 1000);
-    GAS.disabled = true;
-  } else {
-    timer.textContent = "VIA!";
-    inizio = new Date().getTime();
-    GAS.disabled = false;
-  }
+    setTimeout(secondaLuce, 1000)
 }
 
-GAS.addEventListener("click", function(){
-  if(inizio){
-    fine = new Date().getTime();
-    reflex = fine - inizio;
-    risultato = reflex + " ms";
-    timer.textContent = "Il tuo risultato è: " + risultato;
-    GAS.disabled = true;
-  }
-});
+function secondaLuce() {
+    cerchio2.classList.remove("red")
+    cerchio2.classList.add("green")
 
-conteggio();
+    setTimeout(terzaLuce, 450)
+}
+
+function terzaLuce() {
+    cerchio3.classList.remove("red")
+    cerchio3.classList.add("green")
+
+    data1 = new Date()
+}
+
+function testaRiflessi() {
+    data2 = new Date()
+
+    ms1 = date1.getMilliSeconds()
+    ms2 = date2.getMilliSeconds()
+
+    punteggio = ms2 - ms1
+    
+}

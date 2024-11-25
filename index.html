@@ -4,33 +4,30 @@
     <link rel="stylesheet" href="STATIC/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <title>Simulatore Riflessi Formula 1</title>
 </head>
 <body>
+    <div class="container">
+        <h1>CLICCA QUANDO VEDI IL VERDE</h1>
+        <h3>TESTA I TUOI RIFLESSI</h3>
+    </div>
+
+
+    <div class="container2">
+        <div class="cerchio1"></div>
+        <div class="cerchio2"></div>
+        <div class="cerchio3"></div>
+    </div>
     <br>
-    <div id="semaforo"></div>
-    <h1 class="titolo">PROVA I TUOI RIFLESSI!</h1>
     <br>
-    <img src="STATIC/IMMAGES/Immagine F1.png">
-    <br>
-    <br>
-    <h2 class="testoformula1">Al verde clicca il pulsante</h2>
-    <br>
-    <h3 class="contatoreformula1"></h3>
-    <p id="timer" class="timer">3</p>
-    <br>
-
-    <button type="submit" id="GAS" style="text-align: center; align-items: center; margin-top: 1px; height: 60px; width: 200px; border-radius: 5px;background-color: orangered; border-color: orangered;">DAI GAS!</button>
-
-
-
-
-
-
-
-
-
+    <div class="container3">
+        <form action="">
+            <input onclick="startGame()" type="button" name="pulsante" id="pulsante" class="button" value="INIZIO GIOCO!">
+            <input onabort="testaRiflessi()" type="button" name="misura" id="pulsante_misura" value="testa i tuoi riflessi">
+        </form>
+    </div>
+    <p class="testo">i tuoi riflessi sono: </p>
     <script src="STATIC/script.js"></script>
 </body>
 </html>
