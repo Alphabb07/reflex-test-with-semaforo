@@ -2,7 +2,7 @@
 let cerchio
 let cerchio2
 let cerchio3
-let punteggio
+let punteggio = 0
 let data1
 let data2
 let ms1
@@ -40,5 +40,10 @@ function testaRiflessi() {
     ms2 = date2.getMilliSeconds()
 
     punteggio = ms2 - ms1
-    
+    document.querySelector()
+    document.querySelector(".testo").innerHTML = punteggio
+
 }
+
+
+console.log(punteggio);
